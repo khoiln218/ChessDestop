@@ -273,7 +273,7 @@ public class ChineseChess extends JFrame {
                 Object[] options = {"OK", "CANCEL"};
                 Object obj = JOptionPane.showOptionDialog(null, "          Click OK to QUIT", "Warning",
                         JOptionPane.DEFAULT_OPTION, JOptionPane.WARNING_MESSAGE, null, options, options[0]);
-                if (obj == 0) {
+                if (obj.equals(0)) {
                     dispose();
                     exit();
                 } else {
